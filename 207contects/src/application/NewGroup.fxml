@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <TextField fx:id="newGroupName" promptText="请输入新分组名" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="40.0" right="40.0" />
+         </BorderPane.margin>
+      </TextField>
+   </center>
+   <bottom>
+      <Button fx:id="setNewGroupNameBtn" mnemonicParsing="false" onAction="#setNewGroupName" style="-fx-background-color: skyblue;" text="确认" textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewLinkmanController">
+   <left>
+      <GridPane hgap="10.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="95.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="10.0" prefWidth="465.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="手机" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="电话" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="电子邮箱" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="QQ" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="微信" GridPane.rowIndex="5">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="生日" GridPane.rowIndex="6">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="所属组" GridPane.rowIndex="7">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="地址" GridPane.rowIndex="8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="邮编" GridPane.rowIndex="9">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" GridPane.columnIndex="1" />
+            <TextField fx:id="phone" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="qq" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="wx" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="birthday" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="group" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="address" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="post" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="姓名">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <Button fx:id="saveBtn" mnemonicParsing="false" style="-fx-background-color: green;" text="保存联系人" textFill="WHITE" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <ImageView fx:id="iconImgView" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <image>
+                        <Image url="@image/75876952.jpeg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Button fx:id="setIconBtn" mnemonicParsing="false" style="-fx-background-color: skyblue;" text="设置头像" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </bottom>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
